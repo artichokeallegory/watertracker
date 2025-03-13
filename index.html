@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Water Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Stay Hydrated, Daddy-O!</h1>
+        <div id="visualization-container">
+            <img id="daily-visualization" src="visual1.png" alt="Water Visualization">
+        </div>
+        <button id="log-water">Log Water</button>
+        <p id="progress-text">0oz logged today</p>
+    </div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(() => console.log('Service Worker Registered'));
+        }
+    </script>
+</body>
+</html>

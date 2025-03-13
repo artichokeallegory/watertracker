@@ -1,0 +1,21 @@
+body {
+    font-family: 'Pacifico', cursive;
+    background-color: #FDF6EC;
+    text-align: center;
+}
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #FFEBCC;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+}
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background: #FF4081;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
